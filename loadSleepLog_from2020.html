@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      -->
+<title>loadSleepLog_from2020</title>
+<meta name="generator" content="MATLAB 23.2">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<meta name="DC.date" content="2025-11-19">
+<meta name="DC.source" content="loadSleepLog_just2025.m">
+<style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style>
+</head>
+<body>
+<div class="content">
+<h2>Contents</h2>
+<div>
+<ul>
+<li>
+<a href="loadSleepLog_just2025.html">From 2025</a>
+</li>
+<li>
+<a href="loadSleepLog_from2024.html">From 2024</a>
+</li>
+<li>
+<a href="#3">Wake Times and Hours Slept Over Time</a>
+</li>
+<li>
+<a href="#5">Histogram of Wake Times</a>
+</li>
+<li>
+<a href="#6">One Hour Bins</a>
+</li>
+</ul>
+</div>
+<h2 id="3">Wake Times and Hours Slept Over Time</h2>
+<li>
+<a href="loadSleepLog_just2025.html#3">See from 2025</a>
+</li>
+<li>
+<a href="loadSleepLog_from2024.html">See from 2024</a>
+</li>
+<img vspace="5" hspace="5" src="loadSleepLog_from2020_01.png" alt=""> <img vspace="5" hspace="5" src="loadSleepLog_from2020_02.png" alt=""> 
+<h2 id="5">Histogram of Wake Times</h2>
+<p>Each bin includes the leading edge, but does not include the trailing edge, except for the last bin which includes both edges.</p>
+<li>
+<a href="loadSleepLog_just2025.html#5">See from 2025</a>
+</li>
+<li>
+<a href="loadSleepLog_from2024.html#5">See from 2024</a>
+</li>
+<img vspace="5" hspace="5" src="loadSleepLog_from2020_03.png" alt=""> <h2 id="6">One Hour Bins</h2>
+<li>
+<a href="loadSleepLog_just2025.html#6">See from 2025</a>
+</li>
+<li>
+<a href="loadSleepLog_from2024.html#6">See from 2024</a>
+</li>
+<img vspace="5" hspace="5" src="loadSleepLog_from2020_04.png" alt=""> <p class="footer">
+<br>
+<a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2023b</a>
+<br>
+</p>
+</div>
+<!--
+##### SOURCE BEGIN #####
+fileLoc = 'C:\Users\justin.pedro\Documents\MATLAB\SleepLog\SleepLog_From2020March_ForMatlab.csv';
+
+w=warning('off','MATLAB:table:ModifiedAndSavedVarnames'); 
+sleepTable = readtable(fileLoc,'VariableNamingRule','modify');
+%%
+dateStrTable = sleepTable.Date;
+wakeTime = sleepTable.WakeTime;
+hoursSlept = sleepTable.HoursSlept;
+
+emptyRows = isnan(hoursSlept);
+dateStrTable = dateStrTable(~emptyRows);
+wakeTime = wakeTime(~emptyRows);
+hoursSlept = hoursSlept(~emptyRows);
+
+moreEmptyRows = isnan(wakeTime);
+dateStrTable = dateStrTable(~moreEmptyRows);
+wakeTime = wakeTime(~moreEmptyRows);
+hoursSlept = hoursSlept(~moreEmptyRows);
+
+% limit start year
+startYear = 20;
+year2025data = find(dateStrTable.Year >= startYear);
+dateStrTable = dateStrTable(year2025data);
+wakeTime = wakeTime(year2025data);
+hoursSlept = hoursSlept(year2025data);
+
+smoothDays = 5;
+hoursSleptSmooth = smooth(hoursSlept,smoothDays); 
+
+%%% Wake Times and Hours Slept Over Time
+figure(123); clf;
+plot(dateStrTable,wakeTime)
+ylabel('Wake Time (HHMM)')
+
+yyaxis right
+% plot(hoursSlept)
+% ylabel(sprintf('Hours Slept'))
+plot(dateStrTable,hoursSleptSmooth)
+ylabel(sprintf('Hours Slept (smoothed - %d day average)',smoothDays))
+ylim([0 9])
+xlabel('Date (Year)')
+title(sprintf('Wake Time and Daily Hours Slept Over since 20%d',startYear))
+grid on
+%%%
+figure(321); clf
+plot(dateStrTable,hoursSlept)
+ylabel('Hours Slept')
+hold on;
+plot(dateStrTable,hoursSleptSmooth)
+% yyaxis right
+ylabel('Hours Slept');
+% ylabel(sprintf('Hours Slept (smoothed - %d day average)',smoothDays))
+legend('Hours Slept (Raw)',sprintf('Hours Slept (smoothed - %d day average)',smoothDays),'Location','best')
+title(sprintf('Daily Hours Slept since 20%d',startYear))
+xlabel('Date (Year)')
+grid on
+% 
+% %%% sort by wake time
+% 
+% [sortVals,sortIdx] = sort(wakeTime,'ascend');
+% fitType = 'poly6';'smoothingspline'; 
+% fitobject = fit(wakeTime(sortIdx),hoursSlept(sortIdx),fitType);
+% figure(634); clf;
+% scatter(wakeTime(sortIdx),hoursSlept(sortIdx))
+% hold on; plot(fitobject)
+% xlabel('Time (HHMM)')
+% ylabel('Hours Slept')
+% title('Hours Slept vs Wake Time')
+% grid on
+
+%% Histogram of Wake Times
+% Each bin includes the leading edge, but does not include the trailing 
+% edge, except for the last bin which includes both edges.
+figure(456); 
+subplot(211);
+histogram(wakeTime, 0:100:2400);
+xlabel('Wake Time (HHMM)')
+ylabel 'Count'
+title('Distribution of Wake Up Times')
+grid on
+
+barXlims = get(gca,'XLim');
+
+subplot(212)
+histogram(hoursSlept,[0:.25:10]);
+xlabel('Hours Slept')
+ylabel 'Count'
+title(sprintf('Mean: %4.2f hours, Std: %4.2f hours',mean(hoursSlept),std(hoursSlept)));
+grid on
+% %% break down by wakeup time
+% uniqueWakeTimes = unique(wakeTime);
+% 
+% for wakeTimeIdx = 1:length(uniqueWakeTimes)
+%     hoursSleptByTime{wakeTimeIdx} = [hoursSlept(wakeTime ==uniqueWakeTimes(wakeTimeIdx))];
+%     meanHoursSleptByTime(wakeTimeIdx) =  mean(hoursSleptByTime{wakeTimeIdx});
+%     stdHoursSleptByTime(wakeTimeIdx) =  std(hoursSleptByTime{wakeTimeIdx});
+% end
+% 
+% figure(934);
+% bar(uniqueWakeTimes,meanHoursSleptByTime)
+
+%% One Hour Bins
+wakeTimes_HourBins = 0:100:2400;
+wakeTime(wakeTime == 2400) = 0;
+for wakeTimeHourIdx = 1:length(wakeTimes_HourBins)-1
+    hoursSleptByHour{wakeTimeHourIdx} = [hoursSlept(wakeTime >= ...
+        wakeTimes_HourBins(wakeTimeHourIdx) ...
+        & wakeTime < ...
+        wakeTimes_HourBins(wakeTimeHourIdx+1))];
+    meanHoursSleptByTime_hour(wakeTimeHourIdx) =  mean(hoursSleptByHour{wakeTimeHourIdx});
+    stdHoursSleptByTime_hour(wakeTimeHourIdx) =  std(hoursSleptByHour{wakeTimeHourIdx});
+end
+
+samplesInEachBin = cellfun(@length,hoursSleptByHour );
+
+figure(9342); clf;
+subplot(211)
+plot(wakeTimes_HourBins(1:end-1),meanHoursSleptByTime_hour)
+title('Mean Hours Slept vs Wake Hour')
+xlabel('Wake Time (HHMM)')
+ylabel('Mean Hours Slept')
+hold on;
+plot(wakeTimes_HourBins(1:end-1),meanHoursSleptByTime_hour-stdHoursSleptByTime_hour,'REPLACE_WITH_DASH_DASH')
+plot(wakeTimes_HourBins(1:end-1),meanHoursSleptByTime_hour+stdHoursSleptByTime_hour,'REPLACE_WITH_DASH_DASH')
+% ylim([0 8])
+ylim([4 7.5])
+
+xlim(barXlims)
+legend('Mean','Mean-Std.','Mean+Std.','Location','best')
+grid on
+subplot(212)
+bar(wakeTimes_HourBins(1:end-1),samplesInEachBin)
+title('Samples in each bin')
+xlabel('Wake Time (HHMM)')
+ylabel('Num. Samples')
+grid on
+
+
+##### SOURCE END #####
+-->
+</body>
+</html>
