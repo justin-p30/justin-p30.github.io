@@ -14,7 +14,6 @@
 <li>
 <a href="loadSleepLog_from2020.html">From 2025</a>
 </li>
-<li>
 </ul>
   
 </html>
